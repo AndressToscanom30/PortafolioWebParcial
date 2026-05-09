@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrés | Portafolio</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
+    <div id="particles-js"></div>
 
     <!-- NAVBAR -->
     <header>
         <nav>
-            <h2 class="logo">Andrés</h2>
+            <img src="img/AT-logo.png" width="20px">
 
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -32,7 +30,7 @@
     <!-- INICIO -->
     <section id="inicio" class="hero">
         <div class="hero-text">
-            <h1>Andrés</h1>
+            <h1>Andrés Toscano</h1>
 
             <h3>
                 Estudiante de Ingeniería de Sistemas | UDES
@@ -54,12 +52,12 @@
         </div>
 
         <div class="hero-img">
-            <img src="img/fotoPerfil.png2" alt="Foto de Andrés">
+            <img src="img/fotoPerfil.png" alt="Foto de Andrés">
         </div>
     </section>
 
     <!-- PRESENCIA DIGITAL -->
-    <section id="presencia">
+    <section id="presencia" class="hidden">
         <h2>Presencia Digital</h2>
 
         <div class="cards">
@@ -73,7 +71,8 @@
                     aprendizaje y networking.
                 </p>
 
-                <a href="https://www.linkedin.com/in/andr%C3%A9s-sebasti%C3%A1n-toscano-mart%C3%ADnez-564741276/">Visitar perfil</a>
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-sebasti%C3%A1n-toscano-mart%C3%ADnez-564741276/">Visitar
+                    perfil</a>
             </div>
 
             <div class="card">
@@ -87,60 +86,82 @@
                 <a href="https://github.com/AndressToscanom30/">Ver GitHub</a>
             </div>
 
-            <div class="card">
-                <i class="fa-brands fa-medium"></i>
-                <h3>Medium</h3>
-
-                <p>
-                    Artículos sobre programación y aprendizaje.
-                </p>
-
-                <a href="#">Leer artículos</a>
-            </div>
-
         </div>
     </section>
 
     <!-- CONTENIDO -->
-    <section id="contenido">
-        <h2>Artículos y Publicaciones</h2>
+    <section id="contenido" class="hidden">
 
-        <div class="content-box">
+        <h2>Tecnologías y Habilidades</h2>
 
-            <div class="post">
-                <h3>Aprendiendo JavaScript desde cero</h3>
+        <div class="tech-container">
+
+            <div class="tech-card">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
 
                 <p>
-                    Reflexión sobre fundamentos del desarrollo web moderno.
+                    Desarrollo de aplicaciones,
+                    estructuras de datos y backend.
                 </p>
-
-                <a href="#">Leer más</a>
             </div>
 
-            <div class="post">
-                <h3>Mi experiencia con Flask y React</h3>
+            <div class="tech-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
 
                 <p>
-                    Integración frontend y backend en proyectos reales.
+                    Desarrollo frontend interactivo
+                    y lógica web moderna.
                 </p>
-
-                <a href="#">Leer más</a>
             </div>
 
-            <div class="post">
-                <h3>Reflexión del curso</h3>
+            <div class="tech-card">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
 
                 <p>
-                    Este curso fortaleció mis habilidades digitales,
-                    organización y presencia profesional.
+                    Automatización, scraping
+                    y desarrollo backend.
+                </p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+
+                <p>
+                    Interfaces modernas y dinámicas
+                    para aplicaciones web.
+                </p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL</h3>
+
+                <p>
+                    Gestión de bases de datos,
+                    consultas y procedimientos.
+                </p>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-node-js"></i>
+                <h3>MERN Stack</h3>
+
+                <p>
+                    Desarrollo Full Stack con
+                    MongoDB, Express, React y Node.js.
                 </p>
             </div>
 
         </div>
+
     </section>
 
     <!-- PROYECTOS -->
-    <section id="proyectos">
+    <section id="proyectos" class="hidden">
         <h2>Proyectos del Curso</h2>
 
         <div class="projects">
@@ -200,6 +221,7 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 
 </body>

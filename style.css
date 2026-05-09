@@ -111,7 +111,7 @@ h2{
 .project-card,
 .post{
     background:#1e293b;
-    padding:25px;
+    padding:15px;
     border-radius:20px;
     transition:0.3s;
 }
@@ -170,4 +170,94 @@ button{
 
 html{
     scroll-behavior:smooth;
+}
+
+/* ANIMACIONES SCROLL */
+
+.hidden{
+    opacity:0;
+    filter:blur(5px);
+    transform:translateY(50px);
+    transition:all 1s;
+}
+
+.show{
+    opacity:1;
+    filter:blur(0);
+    transform:translateY(0);
+}
+
+/* Animaciones individuales */
+
+.card:nth-child(1){
+    transition-delay:200ms;
+}
+
+.card:nth-child(2){
+    transition-delay:400ms;
+}
+
+.card:nth-child(3){
+    transition-delay:600ms;
+}
+
+.project-card:nth-child(1){
+    transition-delay:200ms;
+}
+
+.project-card:nth-child(2){
+    transition-delay:400ms;
+}
+
+.project-card:nth-child(3){
+    transition-delay:600ms;
+}
+
+/* TECNOLOGIAS */
+
+.tech-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.tech-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    border:1px solid transparent;
+}
+
+.tech-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    border:1px solid #38bdf8;
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+}
+
+.tech-card i{
+    font-size:55px;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.tech-card h3{
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.tech-card p{
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    background:#0f172a;
 }
