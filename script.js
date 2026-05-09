@@ -82,3 +82,25 @@ particlesJS("particles-js", {
 
     retina_detect: true
 });
+
+const videoCards = document.querySelectorAll('.video-card');
+
+videoCards.forEach(card => {
+
+    const video = card.querySelector('video');
+
+    card.addEventListener('mouseenter', () => {
+
+        video.play();
+
+    });
+
+    card.addEventListener('mouseleave', () => {
+
+        video.pause();
+
+        video.currentTime = 0;
+
+    });
+
+});

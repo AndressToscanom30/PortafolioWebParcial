@@ -15,7 +15,11 @@
     <!-- NAVBAR -->
     <header>
         <nav>
-            <img src="img/AT-logo.png" width="20px">
+            <div class="logo-container">
+
+                <img src="img/AT-logo.png" alt="Logo Andrés">
+
+            </div>
 
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -162,33 +166,86 @@
 
     <!-- PROYECTOS -->
     <section id="proyectos" class="hidden">
-        <h2>Proyectos del Curso</h2>
 
-        <div class="projects">
+        <h2>Proyectos Personales</h2>
 
-            <div class="project-card">
-                <h3>Sistema de Productividad</h3>
+        <div class="projects-container">
 
-                <p>
-                    Organización de tareas y gestión de tiempo
-                    usando herramientas digitales.
-                </p>
+            <!-- PROYECTO 1 -->
+            <div class="project-card video-card">
+
+                <img src="img/proyecto1.png" alt="Proyecto Tributario" class="project-image">
+
+                <a href="https://www.divinasmonturas.com/">
+                    <video class="project-video" muted loop preload="none">
+                        <source src="video/proyecto1.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <div class="project-overlay">
+
+                    <h3>Divinas monturas</h3>
+
+                    <p>
+                        Página web de la empresa Divinas monturas.
+                        Hecha con el fin de crear presencia digital.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Tailwind</span>
+                        <span>MongoDB</span>
+                        <span>Stack MERN</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-card">
-                <h3>Análisis de Datos</h3>
+            <!-- PROYECTO 2 -->
+            <div class="project-card video-card">
 
-                <p>
-                    Análisis de productividad semanal usando hojas de cálculo.
-                </p>
+                <img src="img/proyecto2.png" alt="Proyecto Scraping" class="project-image">
+
+                <video class="project-video" muted loop preload="none">
+                    <source src="video/proyecto2.mp4" type="video/mp4">
+                </video>
+
+                <div class="project-overlay">
+
+                    <h3>Cronos</h3>
+
+                    <p>
+                        Sistema de gestión de obligaciones y calendarios tributarios.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-card">
-                <h3>Scraping Web</h3>
+            <!-- PROYECTO 3 -->
+            <div class="project-card video-card">
 
-                <p>
-                    Extracción automática de productos y precios.
-                </p>
+                <img src="img/proyecto3.jpg" alt="Proyecto React" class="project-image">
+
+                <video class="project-video" muted loop preload="none">
+                    <source src="video/proyecto3.mp4" type="video/mp4">
+                </video>
+
+                <div class="project-overlay">
+
+                    <h3>Dashboard MERN</h3>
+
+                    <p>
+                        Aplicación full stack con autenticación y panel dinámico.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
             </div>
 
         </div>
